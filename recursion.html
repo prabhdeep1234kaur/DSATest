@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion</title>
+</head>
+<body>
+    Solve problem by calling the function itsel.
+    <p>
+        <b> Factorial example !</b>
+        <pre>
+            n! = n * (n-1) * (n-2) * (n-3)...
+            4! = 4*3*2*1
+            2! = 2*1
+            1! = 1
+            0! = 0 
+        </pre>
+        we will follow new definition
+        <pre>
+            n! = n * (n-1)!
+            if(n>=1) : n * (n-1)! recursive case
+            else if (n-0) : 1 base case
+        </pre>
+        <i>because 0! is not defined</i>
+    </p>
+    <p>
+        <b>Fibonacci sequence recursion</b>
+        <pre>
+            1 1 2 3 5 8 13 : 1+1, 1+2 , 2+3, 3+5, 5+8
+            FN = FN-1 + FN-2 
+            F5 = F4+F3
+        </pre>
+
+        <i> but</i>
+        <pre>
+            F2 = F1 + F0
+            F1 = F0 + F-1
+        </pre>
+        <pre>
+            if(n >2) : (n-1)+ (n-2); >> recursive case
+            else : 1; >> base case
+            fibo num = position it is at : 
+                1 = 1
+                1 = 2
+                2 = 3
+                3 = 4
+                5 = 5
+                13 = 6
+        </pre>
+    </p>
+    <i> </i>
+</body>
+<script src="src/recursion.js"></script>
+</html>
